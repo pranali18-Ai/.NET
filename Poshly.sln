@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poshly", "Poshly\Poshly.csproj", "{DA95D236-AFCC-4CD9-83AD-E2F592346CB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BussinessLayer", "BussinessLayer\BussinessLayer.csproj", "{DFB5D83D-1F80-47AD-B2EC-B1C9E5B0CF08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA95D236-AFCC-4CD9-83AD-E2F592346CB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA95D236-AFCC-4CD9-83AD-E2F592346CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA95D236-AFCC-4CD9-83AD-E2F592346CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA95D236-AFCC-4CD9-83AD-E2F592346CB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFB5D83D-1F80-47AD-B2EC-B1C9E5B0CF08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFB5D83D-1F80-47AD-B2EC-B1C9E5B0CF08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFB5D83D-1F80-47AD-B2EC-B1C9E5B0CF08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFB5D83D-1F80-47AD-B2EC-B1C9E5B0CF08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5A4FD28-34FC-4F69-BE28-F5AD3FAD25DD}
+	EndGlobalSection
+EndGlobal
