@@ -1,0 +1,69 @@
+﻿@using WebApplication1.Models;
+@{
+    ViewBag.Title = "Home";
+    ViewBag.Description = "Your one-stop solution for seamless registration and login.";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+    <div classNameName="container mt-5">
+        <header>
+            <h2 classNameName="text-center">@ViewBag.Title</h2>
+            <p classNameName="text-center">@ViewBag.Description</p>
+            <div classNameName="row justify-content-center">
+                <div classNameName="col-auto">
+                    <button>
+                        @Html.ActionLink("Registration", "Register", "Account", null, new { @className = "btn btn-primary" })
+                </div>
+                <br />
+                <div classNameName="col-auto">
+                    @Html.ActionLink("Login", "Login", "Account", null, new { @className = "btn btn-secondary" })
+                </div>
+                </button>
+            </div>
+        </header>
+    </div>
+
+    <!-- Add some attractive elements inspired by your AI -->
+    <div classNameName="container mt-4">
+        <div classNameName="text-center">
+            <h3>Why Choose Quick Register?</h3>
+        </div>
+        <div classNameName="row justify-content-center mt-3">
+            <div classNameName="col-md-4">
+                <div classNameName="card">
+                    <div classNameName="card-body">
+                        <h5 classNameName="card-title">Simplicity</h5>
+                        <p classNameName="card-text">Our system is designed to make registration and login easy for you.</p>
+                    </div>
+                </div>
+            </div>
+            <div classNameName="col-md-4">
+                <div classNameName="card">
+                    <div classNameName="card-body">
+                        <h5 classNameName="card-title">Security</h5>
+                        <p classNameName="card-text">Your data is safe and secure with us. We prioritize your privacy.</p>
+                    </div>
+                </div>
+            </div>
+            <div classNameName="col-md-4">
+                <div classNameName="card">
+                    <div classNameName="card-body">
+                        <h5 classNameName="card-title">Efficiency</h5>
+                        <p classNameName="card-text">Save time and effort with our efficient registration process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿@using WebApplication1.Models;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+</head>
+<body>
+    <h2>User Dashboard !</h2>
+    <p>Hello @Session["Name"].ToString()!</p>
+
+
+    <div>
+        @Html.ActionLink("LogOut", "Login", "Account", null, new { @class = "btn btn-outline-dark" })
+
+    </div>
+</body>
+</html>

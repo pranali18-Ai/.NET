@@ -1,0 +1,38 @@
+﻿@using WebApplication1.Models
+@model List<UserAccount>
+
+
+<h2>Admin Dashboard</h2>
+
+<p>Welcome Admin @Session["Name"].ToString()!</p>
+
+
+<table class="table table-hover">
+    <thead>
+        <tr class="table-primary">
+            <th scope="col">UserID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Date of Birth</th>
+            <th scope="col">Username</th>
+            <th scope="col">Gender</th>
+            <th scope="col">UserType</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Name</td>
+                <td>@user.DOB.ToShortDateString()</td>
+                <td>@user.UserName</td>
+                <td>@user.Gender</td>
+                <td>@user.UserType</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    @Html.ActionLink("LogOut", "Login", "Account", null, new { @class = " floate-end btn btn-primary" })
+
+</div>
