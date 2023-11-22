@@ -13,7 +13,7 @@ namespace Poshly
     {
         protected void Application_Start()
         {
-            Database.SetInitializer<Poshly.Models.EmployeeContext>(null);
+            //Database.SetInitializer<Poshly.Models.EmployeeContext>(null);
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

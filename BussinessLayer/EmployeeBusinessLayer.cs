@@ -22,9 +22,10 @@ namespace BusinessLayer
 
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
+                    con.Open();
                     SqlCommand cmd = new SqlCommand("spGetAllEmployees", con);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    con.Open();
+
                     SqlDataReader rdr = cmd.ExecuteReader();
                     while (rdr.Read())
                     {
